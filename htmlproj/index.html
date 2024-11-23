@@ -7,17 +7,24 @@
 <body class="back">
 
 	
-	<div class="back1">
-		<ul>
-			<li><a href ="index2.html">Home</a></li>
-			<li><a href ="index2.html">Menu</a></li>
-			<li><a href ="index2.html">Contact Us</a></li>
-			<li><a href ="index2.html">About</a></li>
-		</ul>
-		<h1 class="title text">My Programming Portfolio</h1>
-
+	<div class="navbar">
+		<a href="#home">Home</a>
+		<a href="#news">Projects</a>
+		<div class="dropdown">
+		  <button class="dropbtn">Menu
+			<i class="fa fa-caret-down"></i>
+		  </button>
+		  <div class="dropdown-content">
+			<a href="#">GitHub</a>
+			<a href="#">Projects</a>
+			<a href="#">About Me</a>
+		  </div>
+		</div> 
+		
 	</div>
-
+	<div class="back1">
+		<h1 class="title text">Jad Dina Portfolio</h1>
+	</div>
 	<div class="padding">
 		<p class="text" style="text-align: center;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum porta consequat. Nullam ornare urna quis porttitor blandit. Vestibulum vestibulum non augue ut aliquam. Nullam vitae placerat nisl. Sed condimentum eget tortor lacinia sodales. Cras faucibus ultrices eleifend. Maecenas eu porta ligula, sed sodales justo.
 
@@ -30,27 +37,26 @@
 	
 	<div class="center" style="background-color:white">
 		<div class ="polaroid">
-			<img src ="css/github.jpg" style="width:100%">
+			<img src ="css/github.jpg" style="width:100%; contain:layout;">
 			<div class = "container">
 				<a class="text" href="https://github.com/Jad-Dina19/Personal-Projects">Git Hub</a>
 			</div>
 		</div>
 	
-       		<div class ="polaroid">
-                	<img src = "css/project.jpg" style="width:100%; contain:layout;">
-                	<div class = "container">
-                        	<a href="index2.html" class="text">Projects</a>
-               		</div>
-        	</div>
+       	<div class ="polaroid">
+                <img src = "css/project.jpg" style="width:100%; contain:layout;">
+                <div class = "container">
+                        <a href="index2.html" class="text">Projects</a>
+               	</div>
+		</div>
 	 	<div class ="polaroid">
-                	<img src = "" style="width:100%">
-                	<div class = "container">
-                        	<p class="text">TBD</p>
-                	</div>
-        	</div>
+            <img src = "css/me.jpg" style="width:100%; contain:layout;">
+                <div class = "container">
+                        <a href="index2.html" class="text">About Me</a>
+                </div>
+        </div>
 	</div>
 
 </body>
 
 </html>
-
