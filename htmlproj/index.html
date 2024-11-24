@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html>
 	<head lang="en">
-	<title>	HTML demo</title>
+	<title>	Programming Portfolio</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/image.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">></link>
+	<style>
+		h1.typewriter {
+            overflow: hidden;
+            border-right: 0.15em solid orange;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.10em;
+            width: 0;
+            animation: typing 2.0s steps(30, end) 1 forwards, blink-caret 0.75s step-end 5;
+			position: relative;
+    		display: inline-block;
+			text-align: center;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 21ch; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: orange; }
+        }
+	</style>
 <body class="back">
 
 	
 	<div class="navbar">
-		<a href="#home">Home</a>
-		<a href="#news">Projects</a>
-		<div class="dropdown">
+		<a class="text" href="#home">Home</a>
+		<a class="text" href="#news">Projects</a>
+		<div class="dropdown text">
 		  <button class="dropbtn">Menu
 			<i class="fa fa-caret-down"></i>
 		  </button>
 		  <div class="dropdown-content">
-			<a href="#">GitHub</a>
-			<a href="#">Projects</a>
-			<a href="#">About Me</a>
+			<a class="text" href="https://github.com/Jad-Dina19/Personal-Projects">GitHub</a>
+			<a class="text" href="#">Projects</a>
+			<a class="text" href="#">About Me</a>
 		  </div>
+		  
 		</div> 
-		
+		<button class="linkedin text">
+			<i class="fa fa-linkedin-square" style="font-size:36px;color:white"></i>LinkedIn
+		</button>
 	</div>
 	<div class="back1">
-		<h1 class="title text">Jad Dina Portfolio</h1>
+		<h1 class="typewriter text title" style="font-size: 40px;">Jad Dina Portfolio</h1>
 	</div>
 	<div class="padding">
 		<p class="text" style="text-align: center;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum porta consequat. Nullam ornare urna quis porttitor blandit. Vestibulum vestibulum non augue ut aliquam. Nullam vitae placerat nisl. Sed condimentum eget tortor lacinia sodales. Cras faucibus ultrices eleifend. Maecenas eu porta ligula, sed sodales justo.
