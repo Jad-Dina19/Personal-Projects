@@ -5,6 +5,8 @@
   background-color: #333;
   top: 0;
   width: 100%;
+  display: flex;
+  border-radius: 8px;
 }
 
 
@@ -15,6 +17,12 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.navbar .linkedin {
+  float: none; 
+  padding: 5px; 
+  font-size: initial;
 }
 
 .dropdown {
@@ -33,17 +41,16 @@
   margin: 0;
   
 }
-.linkedin {
-  float: right;
-  display: flex;
+.linkedin{
+  margin-left: auto; 
+  display: inline-flex; 
   align-items: center;
-  background-color: #333333; 
-  padding: 5px;
-  border: none;
-  
 }
 .linkedin i {
   margin-right: 8px; 
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
 }
 .linkedin:hover {
   background-color: red; 
@@ -93,6 +100,11 @@
   color: white;
 }
 
+.text-container { 
+  max-width: 400px; 
+  margin: 0 auto; 
+  text-align: justify;
+}
 body.back{
   background-color: black;
 }
@@ -117,7 +129,7 @@ div.polaroid {
   margin-bottom: 20px;
   float:left;
   margin-left: 30px;
-
+  border-radius: 8px;
 }
 
 div.container {
@@ -128,4 +140,31 @@ div.container {
   height: 150px;
   width: 200px;
   object-fit: cover;
+}
+
+.container a:hover{
+  color: red;
+}
+
+h1.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.10em;
+  width: 0;
+  animation: typing 2.0s steps(30, end) 1 forwards, blink-caret 0.75s step-end 5;
+position: relative;
+display: inline-block;
+text-align: center;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 21ch; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
 }
